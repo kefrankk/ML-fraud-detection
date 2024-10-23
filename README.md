@@ -1,7 +1,7 @@
 # Fraud detection with Machine Learning model
 
 
-In this project, we create a predictive model to detect fraud in financial transactions. We will use the **Credit Card Fraud Detection** dataset available on Kaggle. This dataset contains 284,807 transactions carried out by credit cards, 492 of which are frauds. It is highly unbalanced, which brings an interesting challenge.
+In this project, I create a predictive model to detect fraud in financial transactions. I used the **Credit Card Fraud Detection** dataset available on Kaggle that contains 294,588 credit card transactions. 
 
 ## Problem Statement:
 
