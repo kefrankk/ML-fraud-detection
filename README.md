@@ -1,8 +1,42 @@
-# Fraud detection with Machine Learning model
+# Fraud detection using Isolation Forest
+
+This project uses **Isolation Forest** to detect potential fraud in transactional data.  I used the **Credit Card Fraud Detection** dataset available on Kaggle, which contains 294,588 credit card transactions. Given that the dataset is unlabeled, the Isolation Forest algorithm helps in identifying anomalies (fraudulent transactions) based on an estimated contamination rate, representing the expected proportion of fraud cases.
 
 
-In this project, I create a predictive model to detect fraud in financial transactions. I used the **Credit Card Fraud Detection** dataset available on Kaggle that contains 294,588 credit card transactions. 
+## Project Overview
+This project aims to detect suspicious transactions by leveraging the Isolation Forest model, widely used for anomaly detection in financial data. The model identifies anomalies by isolating data points that differ significantly from the majority, making it suitable for fraud detection in the absence of labeled data.
 
-## Problem Statement:
 
-Company ABC, a major credit card company, faces challenges with their existing fraud detection system. The current system exhibits slow responsiveness in recognizing new patterns of fraud, leading to significant financial losses. To address this issue, they have contracted us to design and implement an algorithm that can efficiently identify and flag potentially fraudulent transactions for further investigation. The data provided consists of two tables: "cc_info," containing general credit card and cardholder information, and "transactions," containing details of credit card transactions that occurred between August 1st and October 30th.
+### Key Steps
+
+1. Data Preprocessing:
+
+    - Handle categorical data with **One-Hot Encoding** to ensure all features are numeric.
+    - Normalize numerical features to improve the efficiency and accuracy of the model.
+
+2. Model Training:
+
+    - **Isolation Forest** is trained with an estimated contamination level based on typical fraud rates in similar datasets.
+
+
+### Key Files
+`data/`: Contains sample data for training and testing.
+
+`fraud_detection_model.ipynb`: Jupyter notebook detailing data exploration, preprocessing, and model training.
+
+
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/fraud-detection
+cd fraud-detection
+```
+
+2. Install dependencies:
+
+```
+pip install -r requirements.txt
+```
